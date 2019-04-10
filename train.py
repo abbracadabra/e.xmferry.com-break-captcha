@@ -44,7 +44,7 @@ def get():
     vb = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     while True:
         c = random.choice(vb)
-        cf = os.path.join(base, 'dd', c + '.jpg')
+        cf = os.path.join(base, 'letters', c + '.jpg')
         aa = Image.open(cf)
         bb = Image.new('L', (20, 20))
         bb.paste(aa, (np.random.randint(0,5), 0))
